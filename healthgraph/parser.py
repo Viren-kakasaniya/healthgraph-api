@@ -9,8 +9,7 @@ This module contains the classes and methods for parsing Health Graph API data.
 
 import re
 from datetime import date, datetime
-import settings
-import exceptions
+from . import settings, exceptions
 
 __author__ = "Ali Onur Uyar"
 __copyright__ = "Copyright 2012, Ali Onur Uyar"

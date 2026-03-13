@@ -10,7 +10,7 @@ of credentials for accesing the Health Graph API.
 
 import urllib
 import requests
-import settings
+from . import settings
 
 __author__ = "Ali Onur Uyar"
 __copyright__ = "Copyright 2012, Ali Onur Uyar"

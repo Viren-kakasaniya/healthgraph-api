@@ -9,13 +9,15 @@ and uploading Fitness Activity and Health Measurements information.
 """
 
 import urllib
-import urlparse
+try:
+    from urllib.parse import urlparse
+except ImportError:
+    import urlparse
+
 import inspect
 from collections import namedtuple, MutableMapping
-import settings
-import content_types
-import sessionmgr
-from parser import (parse_resource_dict, 
+from . import settings, content_types, sessionmgr
+from .parser import (parse_resource_dict,
                     parse_bool, 
                     parse_distance, parse_distance_km, 
                     parse_date, parse_datetime, 
